@@ -8,9 +8,8 @@ Ce projet montre comment tester une simple application HTML/JS côté client ave
 .
 ├── index.html
 ├── main.js
-├── __tests__/
+├── test/
 │   └── main.test.js
-├── jest.config.js
 ├── package.json
 └── README.md
 ```
@@ -26,7 +25,9 @@ npm init -y
 ### 2. Installer les dépendances nécessaires
  
 ```bash
-npm install --save-dev jest jest-environment-jsdom
+npm install --save-dev jest
+npm install --save-dev jsdom
+npm install --save-dev jest-environment-jsdom
 ```
  
 ### 3. Ajouter le script de test dans `package.json`
@@ -37,17 +38,7 @@ npm install --save-dev jest jest-environment-jsdom
 }
 ```
  
-### 4. Ajouter un fichier de config Jest
- 
-Créer un fichier `jest.config.js` :
- 
-```js
-module.exports = {
-  testEnvironment: 'jest-environment-jsdom',
-};
-```
- 
-### 5. Créer les fichiers de l'application
+### 4. Créer les fichiers de l'application
  
 #### index.html
  
@@ -74,9 +65,9 @@ document.getElementById('myButton').addEventListener('click', () => {
 });
 ```
  
-### 6. Écrire le test
+### 5. Écrire le test
  
-Créer le fichier `__tests__/main.test.js` :
+Créer le fichier `test/main.test.js` :
  
 ```js
 const fs = require('fs');
@@ -102,8 +93,8 @@ button.click();
 });
 ```
  
-### 7. Lancer les tests
+### 6. Lancer les tests
  
 ```bash
-npm test
+npm run test
 ```
