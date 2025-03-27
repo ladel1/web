@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "build": "echo 'Build en cours...'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladel1/web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladel1/web/issues"
+  },
+  "homepage": "https://github.com/ladel1/web#readme",
+  "description": ""
+}
