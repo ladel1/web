@@ -1,1 +1,3 @@
-console.log("CI/CD pipeline is working!");
+document.getElementById('myButton').addEventListener('click', () => {
+    document.getElementById('output').textContent = 'Tu as cliqué !';
+  });
